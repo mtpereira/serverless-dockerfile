@@ -10,7 +10,7 @@ build: Dockerfile
 		docker build --rm --tag $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile .
 
 run: build
-		docker run --rm $(IMAGE_NAME):$(IMAGE_TAG)
+		docker run --rm $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_TAG)
 
 push: run
 		docker push $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_TAG)
