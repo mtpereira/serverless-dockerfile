@@ -8,4 +8,4 @@ A Docker image for running the [serverless framework](https://serverless.com/fra
 
 You can find the image at [`quay.io/mtpereira/serverless`](https://quay.io/repository/mtpereira/serverless).
 
-Check the [`example/`](blob/master/example/) directory for a simple usage example.
+Check the [`example/`](example/) directory for a simple usage example.
