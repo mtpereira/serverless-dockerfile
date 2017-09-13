@@ -1,6 +1,6 @@
-FROM node:8.1.4-alpine
+FROM node:8.4.0-alpine
 
-ENV SERVERLESS_VERSION=1.16.1
+ENV SERVERLESS_VERSION=1.21.1
 WORKDIR /serverless
 
 RUN apk add --update \
