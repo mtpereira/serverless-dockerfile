@@ -19,4 +19,4 @@ release: push
 		git tag $(GIT_TAG) && git push && git push --tag
 
 clean: 
-		docker rmi $(IMAGE_NAME):$(IMAGE_TAG)
+		docker rmi $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_TAG)
