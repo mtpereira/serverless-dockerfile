@@ -1,7 +1,7 @@
 VERSION = $(shell cat Dockerfile | awk '/SERVERLESS_VERSION=/ { split($$0, a, "=") ; print a[2]}')
 IMAGE_NAME = serverless
 IMAGE_TAG = $(VERSION)
-IMAGE_REPO = quay.io/mtpereira
+IMAGE_REPO = docker.io/mtpereira
 GIT_TAG = v$(VERSION)
 
 .PHONY: build run push release clean

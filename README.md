@@ -1,11 +1,12 @@
 # Serverless Dockerfile
 
-[![Docker Repository on Quay](https://quay.io/repository/mtpereira/serverless/status "Docker Repository on Quay")](https://quay.io/repository/mtpereira/serverless)
+[![Docker Build Statu](https://img.shields.io/docker/build/mtpereira/serverless.svg?style=flat-square)]()
+
 
 A Docker image for running the [serverless framework](https://serverless.com/framework/) tool.
 
 ## How to use
 
-You can find the image at [`quay.io/mtpereira/serverless`](https://quay.io/repository/mtpereira/serverless).
+You can find the image at [`docker.io/mtpereira/serverless`](https://hub.docker.com/r/mtpereira/serverless/).
 
 Check the [`example/`](example/) directory for a simple usage example. Build it with `docker build --rm .` inside that directory and then run it with `docker run --rm v $(pwd):/serverless DOCKER_IMAGE_ID`.
