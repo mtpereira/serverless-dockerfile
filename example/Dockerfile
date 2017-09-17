@@ -1,7 +1,6 @@
-FROM quay.io/mtpereira/serverless:1.16.1
+FROM quay.io/mtpereira/serverless:1.21.1
 
-USER root
-RUN yarn install
+COPY package.json yarn.lock ./
+RUN yarn install --pure-lockfile
 
-USER node
 CMD ["offline", "--host", "0.0.0.0", "--port", "3000"]
