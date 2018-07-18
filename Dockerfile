@@ -1,6 +1,6 @@
-FROM node:8.4.0-alpine
+FROM node:9.11.2-alpine
 
-ENV SERVERLESS_VERSION=1.21.1
+ENV SERVERLESS_VERSION=1.28.0
 
 RUN apk add --update \
         groff \
