@@ -1,4 +1,4 @@
-FROM docker.io/mtpereira/serverless:1.28.0
+FROM docker.io/mtpereira/serverless:1.32.0
 
 COPY package.json yarn.lock serverless.yml ./
 RUN yarn install --pure-lockfile
